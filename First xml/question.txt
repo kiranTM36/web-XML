@@ -1,0 +1,9 @@
+Create an XML Schema for a Bookstore. Each <book> should have:
+
+<title> (string, required)
+<author> (string, required)
+<ISBN> (string, required, pattern: 13 digits)
+<price> (decimal, required)
+<publicationDate> (date, required)
+
+Make sure the schema validates that the ISBN is exactly 13 digits.

@@ -1,0 +1,15 @@
+<!DOCTYPE book [
+    <!ELEMENT book (title, author, ISBTN, price, publicationDate)>
+    <!ELEMENT title #PCDATA>
+    <!ELEMENT author #PCDATA>
+    <!ELEMENT ISBN #PCDATA>
+    <!ELEMENT publicationDate #PCDATA>
+]>
+
+<book>
+    <title>HAMLET</title>
+    <author>WILLIAM SHAKESPAHRE</author>
+    <ISBN>98989898989</ISBN>
+    <price>99.99</price>
+    <publicationDate>1905</publicationDate>
+</book>
