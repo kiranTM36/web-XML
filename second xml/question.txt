@@ -1,0 +1,13 @@
+Create an XML Schema for a <student> element where each student has:
+
+<rollNumber> – integer, required
+<name> – string, required
+<age> – integer, required, must be between 16 and 30
+<email> – string, required, must follow basic email format
+<courses> – container element that can have multiple <course> elements, each course being a string
+
+Extra Notes for Validation:
+
+Use xs:restriction for age (min/max)
+Use xs:pattern for email (basic validation)
+Make <courses> allow 1 or more <course>

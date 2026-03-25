@@ -1,0 +1,22 @@
+<!DOCTYPE student [
+    <!ELEMENT student (rollNumber, name, age, email, courses)>
+    <!ELEMENT rollNumber (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT courses (course+)>
+    <!ELEMENT course (#PCDATA)>
+]>
+
+<student xmlns="https://www.inc.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://www.inc.com student.xsd">
+
+    <rollNumber>101</rollNumber>
+    <name>Ram</name>
+    <age>20</age>
+    <email>ram@example.com</email>
+    <courses>
+        <course>BCA</course>
+    </courses>
+</student>

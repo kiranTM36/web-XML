@@ -1,0 +1,49 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.inc.com"
+           xmlns="https://www.inc.com"
+           elementFormDefault="qualified">
+
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="rollNumber" type="xs:integer"/>
+        <xs:element name="name" type="xs:string"/>
+
+        <xs:element name="age">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="16"/>
+              <xs:maxInclusive value="30"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="email">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value=".*@.*"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="courses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="course" maxOccurs="unbounded">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="BCA"/>
+                    <xs:enumeration value="BIT"/>
+                    <xs:enumeration value="BBA"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
