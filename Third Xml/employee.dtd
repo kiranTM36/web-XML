@@ -7,7 +7,7 @@
     <!ELEMENT phone (#PCDATA)>
     <!ELEMENT skills (skill*)>
     <!ELEMENT skill (#PCDATA)>
-    <!ELEMENT joiningdate (#PCDATA)>
+    <!ELEMENT joiningDate (#PCDATA)>
 ]>
 
 <employee xmlns="https://www.inc.com"

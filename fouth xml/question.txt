@@ -1,0 +1,16 @@
+Create an XML and XSD for a library with the following rules:
+
+Root element: <library>
+Child element: <book> (can appear multiple times)
+Book contains:
+<title> → text, required
+<author> → text, required
+<ISBN> → 13-digit number
+<price> → decimal, minimum 5.0
+<publishedYear> → integer, between 1950 and 2025
+<genres> → optional, contains one or more <genre> elements (allowed values: Fiction, Non-Fiction, Mystery, Science, Fantasy)
+Each <book> must have an attribute: id (string, required)
+Hints
+Use maxOccurs="unbounded" for multiple books.
+Use <xs:restriction> for ISBN length, price min value, publishedYear range, and genre enumeration.
+Remember attributes are defined using <xs:attribute>.
