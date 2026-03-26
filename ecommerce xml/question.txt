@@ -1,0 +1,11 @@
+Create XML and XSD:
+
+Root: <store>
+Child: <product> (multiple)
+Each <product>:
+productId (attribute, required)
+<name>
+<price> (must be > 0)
+<category> (electronics / food / clothing only)
+<reviews> (optional)
+multiple <review> (max 3)

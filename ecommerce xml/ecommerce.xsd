@@ -1,0 +1,46 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.inc.com"
+            targetNamespace="http://www.inc.com"
+            elementFormDefault="qualified"
+>
+
+    <xs:element name="product">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="name" type="xs:string"></xs:element>
+
+                <xs:element name="price">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="1"></xs:minInclusive>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="category">
+                    <xs:simpleType>
+                        <xs:restriction type="xs:string">
+                            <xs:enumeration value="electronics"/>
+                            <xs:enumeration value="food" />
+                            <xs:enumeration value="clothing" />  
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="reviews">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="review" type="xs:string" maxOccurs="3" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+
+        <xs:attribute name="productId" maxOccurs="6" type="xs:string"></xs:attribute>
+
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

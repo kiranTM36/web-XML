@@ -1,0 +1,14 @@
+<store xmlns="http://www.inc.com"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.inc.com ecommerce.xsd">
+
+    <product productId="101">
+        <name>Laptop</name>
+        <price>50000</price>
+        <category>electronics</category>
+        <reviews>
+            <review>Good product</review>
+        </reviews>
+    </product>
+
+</store>
