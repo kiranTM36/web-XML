@@ -1,0 +1,15 @@
+Create an XML Schema for an <employee> element where each employee has:
+
+<empID> – integer, required, must be between 1000 and 9999
+<name> – string, required
+<department> – string, required, must be one of: HR, IT, Finance, Marketing
+<email> – string, required, must contain @
+<phone> – string, optional, must be exactly 10 digits if present
+<skills> – optional container that can have multiple <skill> elements, each a string
+<joiningDate> – date, required, must not be in the future
+
+Extra Requirements:
+
+Use enumeration for department
+Use pattern for email and phone
+Use minInclusive/maxInclusive or pattern where appropriate

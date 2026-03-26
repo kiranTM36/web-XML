@@ -1,0 +1,27 @@
+<!DOCTYPE employee[
+    <!ELEMENT employee (empID, name, department, email, phone?, skills?, joiningdate)>
+    <!ELEMENT empID (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT department (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT skills (skill*)>
+    <!ELEMENT skill (#PCDATA)>
+    <!ELEMENT joiningdate (#PCDATA)>
+]>
+
+<employee xmlns="https://www.inc.com"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://www.inc.com employee.xsd"
+        >
+    <empID>1001</empID>
+    <name>Ram Sharma</name>
+    <department>IT</department>
+    <email>ram@example.com</email>
+    <phone>9876543210</phone>
+    <skills>
+        <skill>Java</skill>
+        <skill>React</skill>
+    </skills>
+    <joiningDate>2023-01-15</joiningDate>
+</employee>
