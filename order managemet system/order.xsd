@@ -1,0 +1,48 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.inc.com"
+           xmlns="http://www.inc.com"
+           elementFormDefault="qualified">
+
+    <xs:element name="orders">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="order" maxOccurs="unbounded">
+                    <xs:complexType>
+
+                        <xs:sequence>
+
+                            <xs:element name="customerName" type="xs:string"/>
+
+                            <xs:element name="items">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="item" maxOccurs="10" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="itemName" type="xs:string"/>
+                                                    <xs:element name="quantity" type="xs:integer"/>
+                                                </xs:sequence>
+
+                                                <!-- optional but recommended -->
+                                                <xs:attribute name="code" type="xs:string" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <xs:attribute name="orderId" type="xs:integer" use="required"/>
+
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

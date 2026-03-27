@@ -1,0 +1,15 @@
+<university xmlns="http://www.inc.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.inc.com university.xsd">
+
+    <student>
+        <rollNumber>8989</rollNumber>
+        <name>Kiran Magar</name>
+        <email>hi@gmail.com</email>
+        <courses>
+            <course>CSC123</course>
+        </courses>
+    </student>
+
+</university>
+        

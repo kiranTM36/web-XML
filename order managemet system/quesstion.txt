@@ -1,0 +1,13 @@
+Create XML and XSD:
+
+Root: <orders>
+<order> (multiple)
+Each <order>:
+orderId (required)
+<customerName>
+<items>:
+<item> (1–10)
+<item>:
+<item> :
+has <name />, <quantity/>
+attribute code (pattern: ITM + 3 digits)

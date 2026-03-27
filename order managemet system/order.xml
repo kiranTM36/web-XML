@@ -1,0 +1,17 @@
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.inc.com"
+        xsi:schemaLocation="http://www.inc.com order.xsd">
+
+    <order orderId="101">
+        <customerName>Kiran</customerName>
+
+        <items>
+            <item code="ITM123">
+                <itemName>Mouse</itemName>
+                <quantity>1</quantity>
+            </item>
+        </items>
+
+    </order>
+
+</orders>
