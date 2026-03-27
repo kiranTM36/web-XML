@@ -1,0 +1,13 @@
+<gamePlatform  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns="http://www.inc.com"
+                XMLSchema-instance="http://www.inc.com game.xsd"
+>
+    <user>
+        <name>Kiran Magar</name>
+        <email>kk1077171@gmail.com</email>
+        <games>
+            <game id="G345">GTA V</game>
+            <game id="G567">FIFA</game>
+        </games>
+    </user>
+</gamePlatform>
