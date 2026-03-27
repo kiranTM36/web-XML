@@ -1,33 +1,32 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-            xmlns="http://www.inc.com"
-            targetNamespace="http://www.inc.com"
-            elementFormDefault="qualified"
->
+           xmlns="http://www.inc.com"
+           targetNamespace="http://www.inc.com"
+           elementFormDefault="qualified">
 
     <xs:element name="store">
         <xs:complexType>
             <xs:sequence>
-            
-                <xs:element name="product">
+
+                <xs:element name="product" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
 
-                            <xs:element name="name" type="xs:string"></xs:element>
+                            <xs:element name="name" type="xs:string"/>
 
                             <xs:element name="price">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:integer">
-                                        <xs:minInclusive value="1"></xs:minInclusive>
+                                        <xs:minInclusive value="1"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
 
                             <xs:element name="category">
                                 <xs:simpleType>
-                                    <xs:restriction type="xs:string">
+                                    <xs:restriction base="xs:string">
                                         <xs:enumeration value="electronics"/>
-                                        <xs:enumeration value="food" />
-                                        <xs:enumeration value="clothing" />  
+                                        <xs:enumeration value="food"/>
+                                        <xs:enumeration value="clothing"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
@@ -35,20 +34,20 @@
                             <xs:element name="reviews">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="review" type="xs:string" maxOccurs="3" />
+                                        <xs:element name="review" type="xs:string" maxOccurs="3"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
 
                         </xs:sequence>
 
-                            <xs:attribute name="productId" type="xs:string"></xs:attribute>
+                        <xs:attribute name="productId" type="xs:integer" use="required"/>
 
-                        </xs:complexType>
-                    </xs:element>
-
-                        </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
 </xs:schema>
