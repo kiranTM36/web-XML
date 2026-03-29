@@ -1,0 +1,20 @@
+<Application
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.inc.com"
+        xsi:schemaLocation="http://www.inc.com Application.xsd"
+>
+
+    <applicationID>APP-1234</applicationID>
+    <age>20</age>
+    <email>kiran@gmail.com</email>
+    <phoneNumber>9827364010</phoneNumber>
+    <education>phd</education>
+
+    <skills>
+        <skill>Writing</skill>
+        <skill>Games</skill>
+    </skills>
+    <experience>2</experience>
+    <protfolioURL>www.linkedIn.com</protfolioURL>
+
+</Application>

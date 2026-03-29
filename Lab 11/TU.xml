@@ -1,7 +1,7 @@
 <TU 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmls="http://www.inc.com"
-    xmlns:schemaLocation="http://www.inc.com tu.xsd"
+    xmlns="http://www.inc.com"
+    xsi:schemaLocation="http://www.inc.com tu.xsd"
 >
     <Employee>
         <Post>Clerk</Post>

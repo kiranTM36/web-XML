@@ -1,0 +1,76 @@
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.inc.com"
+        xmlns="http://www.inc.com"
+        elementFormDefault="qualified"
+>
+
+    <xs:element name="Application">
+        <xs:complexType>
+            <xs:sequence>
+            
+                <xs:element name="applicationID">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="APP-[0-9]{4}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="age">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="18"/>
+                            <xs:maxInclusive value="60"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="email">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value=".+@.+"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="phoneNumber">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:pattern value="[0-9]{10}" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="education">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration  value="phd"/>
+                            <xs:enumeration  value="degree"/>
+                            <xs:enumeration  value="master"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="skills">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="skill" maxOccurs="5" type="xs:string"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="experienceYear">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="0" />
+                            <xs:maxInclusive value="40" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="protfolioURL" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,15 @@
+applicantID: pattern APP-xxxx
+
+age: integer (18–60)
+
+email: valid format (pattern)
+
+phoneNumber: exactly 10 digits
+
+education: one of bachelorDegree, masterDegree, phd
+
+skills: 1 to 5 skills
+
+experienceYears: integer (0–40)
+
+portfolioURL: optional, must start with http:// or https://

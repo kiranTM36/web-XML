@@ -1,6 +1,7 @@
-<gamePlatform  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xmlns="http://www.inc.com"
-                XMLSchema-instance="http://www.inc.com game.xsd"
+<gamePlatform  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.inc.com"
+    xsi:schemaLocation="http://www.inc.com game.xsd"
 >
     <user>
         <name>Kiran Magar</name>
