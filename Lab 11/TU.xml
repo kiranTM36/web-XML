@@ -6,7 +6,7 @@
     <Employee>
         <Post>Clerk</Post>
         <Salary>26000</Salary>
-        <Gender>Other</Gender>
+        <Gender>Male</Gender>
         <Username>kiran123</Username>
         <Password>cbbecbbe</Password>
     </Employee>

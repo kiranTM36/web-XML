@@ -1,10 +1,10 @@
 <Application
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://www.inc.com"
-        xsi:schemaLocation="http://www.inc.com Application.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.inc.com"
+    xsi:schemaLocation="http://www.inc.com Application.xsd"
 >
 
-    <applicationID>APP-1234</applicationID>
+    <applicantID>APP-1234</applicantID>
     <age>20</age>
     <email>kiran@gmail.com</email>
     <phoneNumber>9827364010</phoneNumber>
@@ -14,7 +14,8 @@
         <skill>Writing</skill>
         <skill>Games</skill>
     </skills>
-    <experience>2</experience>
-    <protfolioURL>www.linkedIn.com</protfolioURL>
+
+    <experienceYears>2</experienceYears>
+    <portfolioURL>https://www.linkedin.com</portfolioURL>
 
 </Application>
